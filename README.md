@@ -1,64 +1,55 @@
+# Веб-приложение для Распознавания Текста
 
-# Text Recognition Web Application
+Это веб-приложение позволяет пользователям загружать изображения и распознавать текст на них с использованием Tesseract OCR. Приложение предоставляет удобный интерфейс для загрузки изображений и просмотра распознанного текста.
 
-This is a web application that allows users to upload images and performs text recognition on them using Tesseract OCR. The application provides a user-friendly interface for uploading images and viewing the recognized text.
+## Особенности
 
-## Features
+- Удобный интерфейс для перетаскивания и загрузки изображений.
+- Распознавание текста с использованием Tesseract OCR.
+- Поддержка одного файла размером до 5 МБ в форматах .jpg, .jpeg, .png, .gif.
+- Показ распознанного текста в реальном времени.
+- Простой и адаптивный дизайн.
 
-- User-friendly drag and drop interface for uploading images.
-- Text recognition using Tesseract OCR.
-- Supports one file up to 5 MB in formats .jpg, .jpeg, .png, .gif.
-- Real-time display of recognized text.
-- Easy-to-use and responsive design.
+## Используемые Технологии
 
-#### Screenshot
-![](1.png)
+- [FastAPI](https://fastapi.tiangolo.com/): Современный, быстрый (высокопроизводительный) веб-фреймворк для создания API на Python.
+- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract): OCR-движок для различных платформ.
+- [Dropzone.js](https://www.dropzonejs.com/): Открытая библиотека для создания перетаскивания и загрузки файлов с предварительным просмотром изображений.
 
-![](2.png)
+## Установка
 
-## Technologies Used
+### С использованием Docker Compose
 
-- [FastAPI](https://fastapi.tiangolo.com/): A modern, fast (high-performance) web framework for building APIs with Python.
-- Reactive frontend
-- [Tesseract OCR](https://github.com/tesseract-ocr/tesseract): An OCR engine for various platforms.
-- [Dropzone.js](https://www.dropzonejs.com/): An open-source library that provides drag and drop file uploads with image previews.
-- [Docker](https://www.docker.com/): Containerization platform for deploying applications in containers.
-
-## Installation
-
-### Using Docker Compose
-
-1. Clone the repository:
+1. Склонируйте репозиторий:
 
    ```bash
    git clone https://github.com/Ylyas22/ImageToText
    cd your-repo
    ```
 
-2. Create a `.env` file for configuration (if not already present). You can use the provided `.env.example` as a template.
+2. Создайте файл `.env` для конфигурации (если его ещё нет). Вы можете использовать предоставленный файл `.env.example` как шаблон.
 
-3. Build and start the Docker containers:
+3. Постройте и запустите контейнеры Docker:
 
    ```bash
    docker-compose build
    docker-compose up -d
    ```
 
-4. The application will be accessible at `http://localhost:8000`.
+4. Приложение будет доступно по адресу `http://localhost:8000`.
 
-## Usage
+## Использование
 
-1. Open the application in your web browser.
-2. Drag and drop an image onto the dropzone or click to select a file.
-3. The application will recognize the text on the image using Tesseract OCR.
-4. The recognized text will be displayed on the page.
+1. Откройте приложение в веб-браузере.
+2. Перетащите изображение на зону загрузки или кликните, чтобы выбрать файл.
+3. Приложение выполнит распознавание текста на изображении с помощью Tesseract OCR.
+4. Распознанный текст будет отображаться на странице.
 
-## License
+## Лицензия
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Этот проект лицензирован в соответствии с лицензией MIT. Дополнительную информацию можно найти в файле [LICENSE](LICENSE).
 
-## Acknowledgments
+## Благодарности
 
-- The project uses the [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) library for text recognition.
+- В проекте используется библиотека [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) для распознавания текста.
 
----
