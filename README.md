@@ -19,6 +19,7 @@ This is a web application that allows users to upload images and performs text r
 ## Technologies Used
 
 - [FastAPI](https://fastapi.tiangolo.com/): A modern, fast (high-performance) web framework for building APIs with Python.
+- Reactive frontend
 - [Tesseract OCR](https://github.com/tesseract-ocr/tesseract): An OCR engine for various platforms.
 - [Dropzone.js](https://www.dropzonejs.com/): An open-source library that provides drag and drop file uploads with image previews.
 - [Docker](https://www.docker.com/): Containerization platform for deploying applications in containers.
@@ -30,7 +31,7 @@ This is a web application that allows users to upload images and performs text r
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/Ylyas22/ImageToText
    cd your-repo
    ```
 
@@ -61,5 +62,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - The project uses the [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) library for text recognition.
 
 ---
-
-Пожалуйста, замените `"yourusername/your-repo"` на фактический URL вашего репозитория. Теперь в README указан способ установки и запуска с помощью Docker Compose.
